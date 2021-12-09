@@ -1,10 +1,8 @@
 import React from "react";
 import Listado from "./components/listado";
-import { initializeApp } from "firebase/app";
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
-import { firebaseConfig } from "./firebase/config";
+import { firebaseApp } from "./firebase/config";
 
-const firebaseApp = initializeApp(firebaseConfig);
 const auth = getAuth(firebaseApp);
 
 function App() {
